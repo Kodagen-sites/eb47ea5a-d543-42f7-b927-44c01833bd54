@@ -4,8 +4,11 @@
  * ScrollCanvas
  * Scroll-scrubbed frame sequence renderer. Pinned canvas + GSAP ScrollTrigger.
  *
- * Works for Archetypes A (24s dolly), B (8s object), D (narrative).
- * Not used by Archetypes C, E, F.
+ * IMPORTANT: GSAP `pin` wraps the pinned element in a `pin-spacer` div. If the
+ * pinned element is this component's ROOT node, React can no longer find it as
+ * a direct child of its parent on unmount (client-side navigation) and throws
+ * `removeChild ... not a child of this node`. So we pin an INNER div — the
+ * outer <section> stays React-owned and unmounts cleanly as one subtree.
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -35,7 +38,8 @@ export default function ScrollCanvas({
   children,
   onProgress,
 }: Props) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
+  const pinRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const imagesRef = useRef<HTMLImageElement[]>([]);
   const frameStateRef = useRef({ current: 0 });
@@ -97,7 +101,8 @@ export default function ScrollCanvas({
     if (!ready) return;
     const canvas = canvasRef.current;
     const container = containerRef.current;
-    if (!canvas || !container) return;
+    const pinEl = pinRef.current;
+    if (!canvas || !container || !pinEl) return;
 
     const ctx = canvas.getContext("2d", { alpha: false });
     if (!ctx) return;
@@ -136,78 +141,85 @@ export default function ScrollCanvas({
     const state = frameStateRef.current;
     const isMobile = window.innerWidth < 768;
 
-    const trigger = ScrollTrigger.create({
-      trigger: container,
-      start: "top top",
-      end: `+=${scrollDistance * 100}%`,
-      pin: true,
-      pinSpacing: true,
-      scrub: 0.5,
-      snap: isMobile || !snapPoints
-        ? undefined
-        : {
-            snapTo: snapPoints,
-            duration: { min: 0.2, max: 0.6 },
-            delay: 0.1,
-            ease: "power2.inOut",
-          },
-      onUpdate: (self) => {
-        const target = Math.min(
-          frameCount - 1,
-          Math.floor(self.progress * (frameCount - 1))
-        );
-        if (target !== state.current) {
-          state.current = target;
-          draw(target);
-        }
-        onProgress?.(self.progress);
-      },
-    });
+    // gsap.context scopes everything created inside; ctx.revert() on cleanup
+    // synchronously undoes the pin + removes the pin-spacer BEFORE React
+    // unmounts the subtree.
+    const gctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: container,
+        start: "top top",
+        end: `+=${scrollDistance * 100}%`,
+        // Pin the INNER div, never the component root section.
+        pin: pinEl,
+        pinSpacing: true,
+        scrub: 0.5,
+        snap: isMobile || !snapPoints
+          ? undefined
+          : {
+              snapTo: snapPoints,
+              duration: { min: 0.2, max: 0.6 },
+              delay: 0.1,
+              ease: "power2.inOut",
+            },
+        onUpdate: (self) => {
+          const target = Math.min(
+            frameCount - 1,
+            Math.floor(self.progress * (frameCount - 1))
+          );
+          if (target !== state.current) {
+            state.current = target;
+            draw(target);
+          }
+          onProgress?.(self.progress);
+        },
+      });
+    }, container);
 
     return () => {
       window.removeEventListener("resize", resize);
-      trigger.kill();
+      gctx.revert();
     };
   }, [ready, frameCount, scrollDistance, snapPoints, onProgress]);
 
+    /* Outer section has NO fixed height — GSAP pins the inner div and inserts
+       a tall pin-spacer; the section must be free to grow to that spacer's
+       height, otherwise the hero scroll range collides with the sections
+       below it. */
   return (
-    <section
-      ref={containerRef}
-      className="relative w-full"
-      style={{ height: "100vh" }}
-    >
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 h-full w-full"
-        style={{ background: "var(--bg-color, #000)" }}
-      />
+    <section ref={containerRef} className="relative w-full">
+      <div ref={pinRef} className="relative h-screen w-full overflow-hidden">
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 h-full w-full"
+          style={{ background: "var(--bg-color, #000)" }}
+        />
 
-      {!ready && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-bg text-white"
-          style={{ height: "100dvh" }}
-        >
-          <div className="flex flex-col items-center gap-4">
-            <div className="font-mono text-xs uppercase tracking-[0.3em] text-white/60">
-              Loading cinematic
-            </div>
-            <div className="h-px w-48 overflow-hidden bg-white/10">
-              <div
-                className="h-full bg-white transition-[width] duration-150"
-                style={{
-                  width: `${Math.round((loaded / frameCount) * 100)}%`,
-                }}
-              />
-            </div>
-            <div className="font-mono text-[10px] text-white/40">
-              {loaded} / {frameCount}
+        {!ready && (
+          <div
+            className="absolute inset-0 z-50 flex items-center justify-center bg-bg text-white"
+          >
+            <div className="flex flex-col items-center gap-4">
+              <div className="font-mono text-xs uppercase tracking-[0.3em] text-white/60">
+                Loading cinematic
+              </div>
+              <div className="h-px w-48 overflow-hidden bg-white/10">
+                <div
+                  className="h-full bg-white transition-[width] duration-150"
+                  style={{
+                    width: `${Math.round((loaded / frameCount) * 100)}%`,
+                  }}
+                />
+              </div>
+              <div className="font-mono text-[10px] text-white/40">
+                {loaded} / {frameCount}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="pointer-events-none relative z-10 h-full">
-        {children}
+        <div className="pointer-events-none relative z-10 h-full">
+          {children}
+        </div>
       </div>
     </section>
   );
