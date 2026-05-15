@@ -1,8 +1,6 @@
 {
   "frameCount": 192,
-  "frameDir": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/frames",
+  "frameDir": "/frames",
   "fps": 24,
-  "width": 1920,
-  "frameUrlTemplate": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/frames/frame-{NNNN}.jpg",
-  "storage": "supabase"
+  "width": 1920
 }
