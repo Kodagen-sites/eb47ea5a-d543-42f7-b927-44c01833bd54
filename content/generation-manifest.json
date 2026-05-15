@@ -1,0 +1,52 @@
+{
+  "generation_id": "gen-2026-05-15-saharaops",
+  "company": "SaharaOps",
+  "industry": "operations consulting",
+  "build_mode": "landing",
+  "asset_mode": "live-generate",
+  "archetype": "G",
+  "style": "S11",
+  "style_name": "Architectural Product",
+  "scene_variant": "V2",
+  "motion_variant": "G.M3",
+  "card_variant": "CV4",
+  "hero_overlay_variant": "HO1",
+  "hero_text_pattern": "H5",
+  "hero_entrance": "E3",
+  "header_variant": "transparent-ghost",
+  "footer_variant": "FT6",
+  "about_variant": "AB3",
+  "contact_variant": "CT3",
+  "stats_variant": "ST1",
+  "testimonials_variant": "TS1",
+  "cta_variant": "CTA1",
+  "work_variant": null,
+  "shop_variant": null,
+  "pdp_variant": null,
+  "color_variant": "royal-blue-accent",
+  "color_profile": {
+    "luminance": "light",
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F3F4F7",
+      "tertiary": "#0E1117",
+      "accent": "#ECEFFC"
+    },
+    "text": {
+      "hero": "#14181F",
+      "body": "#565C66",
+      "muted": "#8A8F99"
+    },
+    "accent": "#1F3FD9",
+    "tone_modifier": "premium-restrained"
+  },
+  "industry_object": "ordered architectural bays resolving from open space",
+  "hero_technique": "T2 scroll-scrub ScrollCanvas (192 Veo frames)",
+  "voice_family": "V6 institutional-precise",
+  "assets": {
+    "hero_video": "scene-1 (Veo 3.1 Lite, 8s, 192 frames @ 24fps)",
+    "images_generated": 14,
+    "image_model": "gemini-3.1-flash-image-preview"
+  },
+  "rolled_at": "2026-05-15T12:00:00Z"
+}
