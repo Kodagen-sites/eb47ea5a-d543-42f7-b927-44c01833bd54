@@ -1,1 +1,27 @@
-{"images":{},"videos":{},"frames":{}}
+{
+  "images": {
+    "hero-still": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/hero-still.jpg",
+    "section-about": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-about.jpg",
+    "section-gallery-2": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-2.jpg",
+    "section-contact": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-contact.jpg",
+    "hero-still-2": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/hero-still-2.jpg",
+    "section-gallery-3": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-3.jpg",
+    "section-gallery-4": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-4.jpg",
+    "section-gallery-1": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-1.jpg",
+    "service-org-team-design": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-org-team-design.jpg",
+    "section-services": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-services.jpg",
+    "section-process": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-process.jpg",
+    "service-operational-diagnostics": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-operational-diagnostics.jpg",
+    "service-process-architecture": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-process-architecture.jpg",
+    "service-fractional-coo": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-fractional-coo.jpg",
+    "service-implementation-embed": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-implementation-embed.jpg",
+    "service-revenue-operations": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-revenue-operations.jpg"
+  },
+  "videos": {
+    "final": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/videos/final.mp4",
+    "scene-1": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/videos/scene-1.mp4"
+  },
+  "frames": {},
+  "bucket": "site-assets",
+  "projectId": "eb47ea5a-d543-42f7-b927-44c01833bd54"
+}

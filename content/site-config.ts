@@ -94,7 +94,7 @@ export const siteConfig = {
         "Ranked remediation roadmap",
         "Executive readout and working session",
       ],
-      imageUrl: "/service-operational-diagnostics.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-operational-diagnostics.jpg",
     },
     {
       slug: "process-architecture",
@@ -109,7 +109,7 @@ export const siteConfig = {
         "Tooling and automation plan",
         "Operating documentation library",
       ],
-      imageUrl: "/service-process-architecture.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-process-architecture.jpg",
     },
     {
       slug: "revenue-operations",
@@ -124,7 +124,7 @@ export const siteConfig = {
         "Lead-to-cash handoff design",
         "Forecasting and pipeline review cadence",
       ],
-      imageUrl: "/service-revenue-operations.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-revenue-operations.jpg",
     },
     {
       slug: "org-team-design",
@@ -139,7 +139,7 @@ export const siteConfig = {
         "Hiring sequence and leveling guide",
         "Transition and communication plan",
       ],
-      imageUrl: "/service-org-team-design.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-org-team-design.jpg",
     },
     {
       slug: "implementation-embed",
@@ -154,7 +154,7 @@ export const siteConfig = {
         "Owner coaching and enablement",
         "Adoption tracking and course-correction",
       ],
-      imageUrl: "/service-implementation-embed.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-implementation-embed.jpg",
     },
     {
       slug: "fractional-coo",
@@ -169,14 +169,14 @@ export const siteConfig = {
         "Board and leadership reporting",
         "COO succession and handoff plan",
       ],
-      imageUrl: "/service-fractional-coo.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-fractional-coo.jpg",
     },
   ] as Service[],
 
   process: {
     eyebrow: "How we work",
     heading: "Four moves, in order.",
-    image: "/section-process.jpg",
+    image: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-process.jpg",
     steps: [
       {
         index: "01",
@@ -216,10 +216,10 @@ export const siteConfig = {
     intro:
       "Every engagement leaves behind something the company can run — documented workflows, instrumented metrics, and owners who know how it all fits.",
     images: [
-      { src: "/section-gallery-1.jpg", alt: "Operating model whiteboard session", caption: "Operating model design" },
-      { src: "/section-gallery-2.jpg", alt: "Pipeline and metrics review", caption: "Revenue review cadence" },
-      { src: "/section-gallery-3.jpg", alt: "Process architecture documentation", caption: "Workflow architecture" },
-      { src: "/section-gallery-4.jpg", alt: "Leadership working session", caption: "Embedded delivery" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-1.jpg", alt: "Operating model whiteboard session", caption: "Operating model design" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-2.jpg", alt: "Pipeline and metrics review", caption: "Revenue review cadence" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-3.jpg", alt: "Process architecture documentation", caption: "Workflow architecture" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-4.jpg", alt: "Leadership working session", caption: "Embedded delivery" },
     ],
   },
 
