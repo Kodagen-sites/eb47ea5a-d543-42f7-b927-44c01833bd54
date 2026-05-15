@@ -236,7 +236,11 @@ export default function CanvasAtmosphere({
     <canvas
       ref={canvasRef}
       style={{
-        position: "fixed",
+        // absolute (not fixed) — scopes the canvas to its nearest positioned
+        // ancestor (the section that renders it). `fixed` made it a full-page
+        // overlay covering every section. Host section must be
+        // `relative overflow-hidden` with its content at a higher z-index.
+        position: "absolute",
         inset: 0,
         width: "100%",
         height: "100%",

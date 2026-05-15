@@ -178,7 +178,7 @@ export default function ScrollCanvas({
     >
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 h-screen w-screen"
+        className="absolute inset-0 h-full w-full"
         style={{ background: "var(--bg-color, #000)" }}
       />
 

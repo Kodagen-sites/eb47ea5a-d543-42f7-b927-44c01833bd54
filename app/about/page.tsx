@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig } from "@/content/site-config";
 import PageHero from "@/components/sections/PageHero";
 import FadeUp, { StaggerChildren } from "@/components/motion/FadeUp";
 import MagneticButton from "@/components/motion/MagneticButton";
@@ -8,33 +7,42 @@ import MagneticButton from "@/components/motion/MagneticButton";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "SaharaOps is an operations consultancy that designs and embeds the operating systems growth-stage companies need to scale without breaking.",
+    "SaharaOps is an Operational Readiness consultancy helping Startups, SMEs, and NGOs build the systems, processes, and strategies they need to scale sustainably.",
   alternates: { canonical: "/about" },
 };
 
 const VALUES = [
   {
-    title: "Evidence before opinion",
-    body: "We diagnose how the company actually runs before we recommend a single change. The roadmap is earned, not assumed.",
+    title: "Cross-sector expertise",
+    body: "From fast-moving startups to established SMEs and mission-driven NGOs — we bring patterns that work across every stage and structure.",
   },
   {
-    title: "Embedded, not advisory",
-    body: "We stay in the room through rollout — running meetings, building tooling, coaching owners — until the change holds on its own.",
+    title: "Global perspective",
+    body: "Experience across four continents — Africa, the Middle East, Europe, and Asia — adapting strategies to local realities.",
   },
   {
-    title: "Systems outlast people",
-    body: "Heroics do not scale. We leave behind documented, instrumented operations that keep working when the team turns over.",
+    title: "Proven results",
+    body: "Documented success in process optimization, scaling, and investor readiness — measured in time saved, costs reduced, and funding unlocked.",
   },
   {
-    title: "Quiet by design",
-    body: "Good operations are felt, not seen. Our measure of success is a company that simply runs — calmly, predictably, at speed.",
+    title: "Tailored solutions",
+    body: "We don't just advise; we design and help implement strategies that work for your organization, your stage, and your mission.",
   },
 ];
 
 const TIMELINE = [
-  { year: "The brief", body: "Founders kept asking the same question: growth is here, why does everything feel harder? SaharaOps was built to answer it." },
-  { year: "The method", body: "Four moves — diagnose, design, embed, compound — refined across operations, revenue, and org engagements." },
-  { year: "Today", body: "A remote practice working with growth-stage teams worldwide, holding the operating seat until the system can stand alone." },
+  {
+    year: "The founder",
+    body: "SaharaOps is led by Chisobem Nwokedi — a certified Agile professional, PMP, and Scrum Product Owner with deep expertise in operational readiness, process improvement, and organizational growth.",
+  },
+  {
+    year: "The work",
+    body: "Partnering with founders, executives, and nonprofit leaders to drive operational excellence — across high-growth startups, established SMEs, and international NGO projects including UN WTC–backed programmes.",
+  },
+  {
+    year: "Global reach",
+    body: "A remote practice working with teams across Africa, the Middle East, Europe, and Asia — holding the operating seat until the systems can stand on their own.",
+  },
 ];
 
 export default function AboutPage() {
@@ -42,36 +50,41 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About SaharaOps"
-        title="We make operations the quietest part of the company."
+        title="Sustainable growth is built on a strong operational foundation."
         image="/section-about.jpg"
-        intro="An operations consultancy for the stage where growth starts to outrun the systems that created it."
+        intro="We specialize in Operational Readiness Consulting — helping Startups, SMEs, and NGOs streamline processes, build resilience, and position themselves for growth and impact."
       />
 
       <section className="section-pad bg-paper">
         <div className="mx-auto grid max-w-shell gap-12 px-5 md:grid-cols-[1fr_1.2fr] md:px-10">
           <FadeUp>
-            <p className="eyebrow text-accent">Why we exist</p>
+            <p className="eyebrow text-accent">Who we are</p>
           </FadeUp>
           <FadeUp delay={0.08}>
             <div className="space-y-6 text-lg leading-relaxed text-slate">
               <p>
-                Every growing company hits the same wall. The improvisation that
-                got it off the ground — the shared instinct, the founder in every
-                decision, the workarounds nobody wrote down — stops scaling. Work
-                gets done twice. Handoffs drop. The calendar fills with meetings
-                about meetings.
+                At SaharaOps, we believe that sustainable growth is built on a
+                strong operational foundation. Too often, organizations —
+                whether startups, SMEs, or NGOs — move fast but without the
+                systems and structures needed to scale efficiently.
               </p>
               <p>
-                <span className="text-charcoal">SaharaOps exists for that moment.</span>{" "}
-                We design and embed the operating systems that let a company keep
-                its speed while it grows up — processes that hold their shape, a
-                pipeline everyone agrees on, a structure built for the next stage
-                rather than the last one.
+                <span className="text-charcoal">That's where we come in.</span>{" "}
+                We specialize in Operational Readiness Consulting — helping
+                organizations streamline processes, build resilience, and
+                position themselves for growth and impact. From process
+                optimization and automation to investor readiness, knowledge
+                management, and organizational design, we provide practical
+                solutions that deliver measurable results.
               </p>
-              <p>
-                We are deliberately not a slideware firm. We work inside the
-                business, alongside the people who will run the result, and we
-                leave when they no longer need us.
+              <p className="border-l-2 border-accent pl-5 text-charcoal">
+                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+                  Our mission
+                </span>
+                <br />
+                To empower organizations to achieve clarity, efficiency, and
+                resilience by building the operational systems that support
+                growth, innovation, and impact.
               </p>
             </div>
           </FadeUp>
@@ -81,11 +94,11 @@ export default function AboutPage() {
       <section className="section-pad bg-mist">
         <div className="mx-auto max-w-shell px-5 md:px-10">
           <FadeUp>
-            <p className="eyebrow text-accent">How we think</p>
+            <p className="eyebrow text-accent">What makes us different</p>
           </FadeUp>
           <FadeUp delay={0.08}>
             <h2 className="mt-5 max-w-[16ch] font-display text-[clamp(30px,4vw,52px)] font-light leading-[1.06] tracking-[-0.02em] text-charcoal">
-              Four convictions behind every engagement.
+              Why organizations choose SaharaOps.
             </h2>
           </FadeUp>
           <StaggerChildren
@@ -112,7 +125,7 @@ export default function AboutPage() {
       <section className="section-pad bg-paper">
         <div className="mx-auto max-w-shell px-5 md:px-10">
           <FadeUp>
-            <p className="eyebrow text-accent">The practice</p>
+            <p className="eyebrow text-accent">Our experience</p>
           </FadeUp>
           <div className="mt-10 space-y-0">
             {TIMELINE.map((t, i) => (
@@ -135,7 +148,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-shell px-5 text-center md:px-10">
           <FadeUp>
             <h2 className="mx-auto max-w-[18ch] font-display text-[clamp(30px,4.4vw,58px)] font-light leading-[1.06] tracking-[-0.02em]">
-              See whether the method fits your company.
+              Ready to build your operational backbone?
             </h2>
           </FadeUp>
           <FadeUp delay={0.12}>
@@ -152,7 +165,7 @@ export default function AboutPage() {
           <p className="mt-6 text-sm text-paper/45">
             Or explore the{" "}
             <Link href="/services" className="text-accent underline">
-              full range of engagements
+              full range of services
             </Link>
             .
           </p>

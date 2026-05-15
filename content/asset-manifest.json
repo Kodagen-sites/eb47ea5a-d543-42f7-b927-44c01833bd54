@@ -15,7 +15,10 @@
     "service-process-architecture": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-process-architecture.jpg",
     "service-fractional-coo": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-fractional-coo.jpg",
     "service-implementation-embed": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-implementation-embed.jpg",
-    "service-revenue-operations": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-revenue-operations.jpg"
+    "service-revenue-operations": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-revenue-operations.jpg",
+    "service-ngos": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-ngos.jpg",
+    "service-smes": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-smes.jpg",
+    "service-startups": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-startups.jpg"
   },
   "videos": {
     "final": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/videos/final.mp4",
@@ -23,5 +26,6 @@
   },
   "frames": {},
   "bucket": "site-assets",
-  "projectId": "eb47ea5a-d543-42f7-b927-44c01833bd54"
+  "projectId": "eb47ea5a-d543-42f7-b927-44c01833bd54",
+  "updatedAt": "2026-05-15T14:46:34.867Z"
 }

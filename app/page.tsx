@@ -13,7 +13,7 @@ import PrinciplesMarquee from "@/components/sections/PrinciplesMarquee";
 import CtaSection from "@/components/sections/CtaSection";
 
 export const metadata: Metadata = {
-  title: "Operations Consulting for Growth-Stage Companies",
+  title: "Operational Readiness Consulting for Startups, SMEs & NGOs",
   description: siteConfig.seo.description,
   alternates: { canonical: "/" },
 };

@@ -108,7 +108,7 @@ export default async function ServiceDetailPage({
         <div className="mx-auto max-w-shell px-5 text-center md:px-10">
           <FadeUp>
             <h2 className="mx-auto max-w-[20ch] font-display text-[clamp(30px,4.4vw,56px)] font-light leading-[1.06] tracking-[-0.02em]">
-              Bring {service.name.toLowerCase()} into your company.
+              Ready to build your operational backbone?
             </h2>
           </FadeUp>
           <FadeUp delay={0.12}>

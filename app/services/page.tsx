@@ -9,7 +9,7 @@ import MagneticButton from "@/components/motion/MagneticButton";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Operational diagnostics, process architecture, revenue operations, org design, embedded implementation, and fractional COO leadership — the SaharaOps engagement range.",
+    "Operational Readiness Consulting for Startups, SMEs, and NGOs — process optimization, automation, organizational design, knowledge management, and investment readiness.",
   alternates: { canonical: "/services" },
 };
 
@@ -17,19 +17,21 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
-        title="Six ways to make the system carry the weight."
+        eyebrow="Our Services"
+        title="Operational Readiness Consulting for Startups, SMEs, and NGOs."
         image="/section-services.jpg"
-        intro="Each engagement stands alone — and each one leaves behind operations the company can run without us."
+        intro="Tailored consulting that strengthens your operational backbone — whatever your stage, size, or mission."
       />
 
       <section className="section-pad bg-paper">
         <div className="mx-auto max-w-shell px-5 md:px-10">
           <FadeUp>
             <p className="max-w-2xl text-lg leading-relaxed text-slate">
-              We scope every engagement to the moment the company is in. Start
-              with a diagnostic, or go straight to the system that is straining
-              hardest. The work compounds either way.
+              At SaharaOps, we help organizations build the systems, processes,
+              and strategies they need to scale sustainably. Whether you're a
+              fast-growing startup, an SME improving efficiency, or an NGO
+              driving impact, we deliver practical solutions that unlock growth,
+              resilience, and long-term success.
             </p>
           </FadeUp>
 
@@ -50,13 +52,13 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-shell px-5 text-center md:px-10">
           <FadeUp>
             <h2 className="mx-auto max-w-[18ch] font-display text-[clamp(30px,4.4vw,58px)] font-light leading-[1.06] tracking-[-0.02em]">
-              Not sure which engagement you need?
+              Not sure where to start?
             </h2>
           </FadeUp>
           <FadeUp delay={0.1}>
             <p className="mx-auto mt-6 max-w-[480px] text-[15px] leading-relaxed text-paper/60">
-              Book a consultation. We will walk through where your operations
-              are straining and recommend the right place to start.
+              Book a consultation today to discuss a tailored solution for your
+              startup, SME, or NGO.
             </p>
           </FadeUp>
           <FadeUp delay={0.18}>

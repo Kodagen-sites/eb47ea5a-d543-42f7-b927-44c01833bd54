@@ -10,23 +10,23 @@ import ScrollHint from "@/components/motion/ScrollHint";
 const CHAPTERS: HeroChapter[] = [
   {
     at: 0,
-    eyebrow: "Operations Consulting",
-    headlineLines: ["Operations", "engineered", "to scale."],
+    eyebrow: "Operational Readiness Consulting",
+    headlineLines: ["Operational readiness", "for Startups,", "SMEs & NGOs."],
     subline:
-      "SaharaOps builds the operating systems that carry growth-stage companies from improvised effort to compounding momentum.",
+      "We build the systems, processes, and strategies that help organizations scale efficiently, cut costs, and achieve sustainable growth.",
   },
   {
     at: 0.42,
-    eyebrow: "The premise",
-    headlineLines: ["Growth breaks", "the systems", "that built it."],
+    eyebrow: "Why SaharaOps?",
+    headlineLines: ["Growth requires", "structure."],
     subline:
-      "We rebuild them — quietly, precisely, in step with the team already running the company.",
+      "Without the right processes, strategy and execution fall out of sync — leading to inefficiencies and missed opportunities. We close that gap.",
   },
   {
     at: 0.78,
-    eyebrow: "The result",
-    headlineLines: ["A company", "that compounds."],
-    subline: "Documented, instrumented, owned. Operations that carry the weight.",
+    eyebrow: "Proven outcomes",
+    headlineLines: ["Build your operational", "backbone."],
+    subline: "Resilience, efficiency, and sustainable growth across industries.",
     cta: { label: "Book a Consultation", href: "/contact" },
   },
 ];

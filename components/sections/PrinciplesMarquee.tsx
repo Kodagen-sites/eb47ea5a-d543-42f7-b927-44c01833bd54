@@ -5,12 +5,12 @@ import Marquee from "@/components/motion/Marquee";
  * Tone: charcoal (dark).
  */
 const PRINCIPLES = [
-  "Diagnose before you prescribe",
-  "Systems over heroics",
-  "Documented, instrumented, owned",
-  "Embed until it holds",
-  "Forecasts you can defend",
-  "Order that survives growth",
+  "Operational readiness",
+  "Process optimization",
+  "Investor readiness",
+  "Donor accountability",
+  "Resilient teams",
+  "Scalable, sustainable growth",
 ];
 
 export default function PrinciplesMarquee() {

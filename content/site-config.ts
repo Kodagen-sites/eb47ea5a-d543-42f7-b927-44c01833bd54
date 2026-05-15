@@ -1,6 +1,7 @@
 /**
  * site-config.ts — single source of truth for SaharaOps.
- * Generation: cinematic-site-generator · Archetype G · Style S11 (Architectural Product)
+ * Generation: cinematic-site-generator · Archetype G
+ * Content: SaharaOps — Operational Readiness Consulting for Startups, SMEs & NGOs.
  */
 
 export type Service = {
@@ -37,9 +38,9 @@ export const siteConfig = {
   company: {
     name: "SaharaOps",
     legalName: "SaharaOps Ltd.",
-    tagline: "Operations engineered to scale.",
+    tagline: "Operational Readiness Consulting.",
     description:
-      "SaharaOps builds the operating systems that carry growth-stage companies from improvised effort to compounding momentum.",
+      "SaharaOps helps Startups, SMEs, and NGOs build the systems, processes, and strategies they need to scale efficiently, cut costs, and achieve sustainable growth.",
     email: "hello@saharaops.com",
     location: "Remote · Worldwide",
   },
@@ -53,205 +54,169 @@ export const siteConfig = {
 
   seo: {
     siteUrl: "https://saharaops.com",
-    title: "SaharaOps — Operations Consulting for Growth-Stage Companies",
+    title: "Operational Readiness Consulting for Startups, SMEs & NGOs | SaharaOps",
     description:
-      "SaharaOps designs and embeds the operating systems that let growth-stage companies scale without breaking. Operational diagnostics, process architecture, revenue operations.",
+      "SaharaOps helps Startups, SMEs, and NGOs in Africa, the Middle East, Europe, and Asia scale with operational readiness, process optimization, and investor readiness consulting.",
     locale: "en_US",
   },
 
   hero: {
-    eyebrow: "Operations Consulting",
-    h1: ["Operations", "engineered", "to scale."],
+    eyebrow: "Operational Readiness Consulting",
+    h1: ["Operational readiness", "for Startups,", "SMEs & NGOs."],
     subhead:
-      "SaharaOps builds the operating systems that carry growth-stage companies from improvised effort to compounding momentum.",
+      "We build the systems, processes, and strategies that help organizations scale efficiently, cut costs, and achieve sustainable growth.",
     ctaLabel: "Book a Consultation",
     ctaHref: "/contact",
   },
 
   valueProp: {
-    eyebrow: "The premise",
+    eyebrow: "Why SaharaOps?",
     statement:
-      "Growth breaks the systems that created it. We rebuild them — quietly, precisely, in step with your team.",
+      "Growth requires structure. Without the right processes, strategy and execution fall out of sync — leading to inefficiencies, quality issues, and missed opportunities. At SaharaOps, we close that gap.",
   },
 
   typeStatement: {
     eyebrow: "What we believe",
     statement:
-      "Operations is not overhead. It is the compounding interest of a company that decided to take itself seriously.",
+      "At the heart of every organization lies a simple truth: growth requires structure.",
   },
 
   services: [
     {
-      slug: "operational-diagnostics",
+      slug: "startups",
       index: "01",
-      name: "Operational Diagnostics",
-      summary: "A clear map of where the business leaks time, margin, and momentum.",
+      name: "For Startups",
+      summary: "Build resilience, scale faster, and get investment-ready.",
       description:
-        "We pressure-test how the company actually runs — not how the org chart says it does. Through interviews, data review, and process tracing we surface the friction that compounds silently: handoffs that drop, decisions that stall, work that gets done twice. You leave with a ranked, evidenced picture of what to fix first.",
+        "Scaling a startup often comes with chaos — broken processes, rising costs, and investor demands. We help you bring structure without slowing growth, from burn-rate optimization to investor readiness, so you scale with clarity and confidence.",
       deliverables: [
-        "Cross-functional process trace",
-        "Friction and bottleneck ledger",
-        "Ranked remediation roadmap",
-        "Executive readout and working session",
+        "Operational Readiness Assessments — current vs. future state",
+        "Process Optimization & Automation — reduce costs, improve efficiency",
+        "Investor Readiness — pitch decks, financial forecasts, business model validation",
+        "Scaling & Market Expansion Strategies",
+        "Agile Project & Change Management",
       ],
-      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-operational-diagnostics.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-startups.jpg",
     },
     {
-      slug: "process-architecture",
+      slug: "smes",
       index: "02",
-      name: "Process Architecture",
-      summary: "Workflows and systems designed to hold their shape as you scale.",
+      name: "For SMEs",
+      summary: "Streamline operations and scale sustainably.",
       description:
-        "We design the core operating processes — intake, delivery, reporting, escalation — so they stay legible as headcount doubles. Each workflow is documented, instrumented, and owned. The result is a company that runs the same way on a Tuesday in Q4 as it did the day you launched it.",
+        "SMEs face unique challenges — managing costs, building resilient teams, and expanding into new markets while staying efficient. We help SMEs design scalable systems and remove the inefficiencies that slow growth.",
       deliverables: [
-        "Core workflow blueprints",
-        "Ownership and RACI mapping",
-        "Tooling and automation plan",
-        "Operating documentation library",
+        "Business Process Optimization — workflow redesign, automation tools",
+        "Organizational Design & Talent Development — team structure, leadership coaching",
+        "Risk Management & Business Resilience",
+        "Expansion into New Markets & Product Lines",
+        "Performance Management & Succession Planning",
       ],
-      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-process-architecture.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-smes.jpg",
     },
     {
-      slug: "revenue-operations",
+      slug: "ngos",
       index: "03",
-      name: "Revenue Operations",
-      summary: "One pipeline of truth across sales, marketing, and finance.",
+      name: "For NGOs & Nonprofits",
+      summary: "Strengthen accountability, improve impact, and deliver programs effectively.",
       description:
-        "We align the three functions that quietly disagree with each other. A single funnel definition, shared metrics, clean handoffs, and forecasting your board can trust. Revenue stops being a story told three different ways and becomes a system you can steer.",
+        "Nonprofits must demonstrate efficiency, accountability, and measurable impact to donors and stakeholders. We work with NGOs to improve internal processes, knowledge management, and program delivery.",
       deliverables: [
-        "Unified funnel and stage definitions",
-        "Shared metric and reporting layer",
-        "Lead-to-cash handoff design",
-        "Forecasting and pipeline review cadence",
+        "Knowledge Management — capture, organize, and share learning",
+        "Donor & Stakeholder Reporting — impact frameworks, compliance documentation",
+        "Process Documentation & Workflow Standardization",
+        "Governance & Change Management Support",
+        "Digital Transformation & Program Scaling",
       ],
-      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-revenue-operations.jpg",
-    },
-    {
-      slug: "org-team-design",
-      index: "04",
-      name: "Org & Team Design",
-      summary: "Structure built for the stage you are entering, not the one you left.",
-      description:
-        "We design the team shape, reporting lines, and decision rights for the next phase of growth — before the cracks force the conversation. Roles get sharp edges, managers get span they can actually hold, and the company keeps moving while it reorganizes.",
-      deliverables: [
-        "Target operating model",
-        "Role and decision-rights design",
-        "Hiring sequence and leveling guide",
-        "Transition and communication plan",
-      ],
-      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-org-team-design.jpg",
-    },
-    {
-      slug: "implementation-embed",
-      index: "05",
-      name: "Implementation & Embed",
-      summary: "We stay in the room until the change is real, not just recommended.",
-      description:
-        "Strategy that lives in a deck is a cost, not a result. We embed alongside your team through rollout — running the meetings, building the tooling, coaching the owners — until the new way of working is simply the way the company works.",
-      deliverables: [
-        "Rollout plan and milestone cadence",
-        "Hands-on tooling and automation build",
-        "Owner coaching and enablement",
-        "Adoption tracking and course-correction",
-      ],
-      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-implementation-embed.jpg",
-    },
-    {
-      slug: "fractional-coo",
-      index: "06",
-      name: "Fractional COO",
-      summary: "Senior operational leadership, on the cadence your company needs.",
-      description:
-        "For founders who need an operating partner but not yet a full-time hire, we hold the COO seat — running the operating rhythm, owning execution, and building the function until it is ready to hand to a permanent leader.",
-      deliverables: [
-        "Weekly operating rhythm ownership",
-        "Cross-functional execution oversight",
-        "Board and leadership reporting",
-        "COO succession and handoff plan",
-      ],
-      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-fractional-coo.jpg",
+      imageUrl: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/service-ngos.jpg",
     },
   ] as Service[],
 
   process: {
-    eyebrow: "How we work",
-    heading: "Four moves, in order.",
+    eyebrow: "How it works",
+    heading: "Four steps, in order.",
     image: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-process.jpg",
     steps: [
       {
         index: "01",
-        title: "Diagnose",
-        body: "Two to three weeks inside the business. We trace how work actually moves and rank what is costing you most.",
+        title: "Discovery Call",
+        body: "We learn about your goals, challenges, and opportunities.",
       },
       {
         index: "02",
-        title: "Design",
-        body: "We architect the operating systems — processes, structure, metrics — and pressure-test them with the people who will run them.",
+        title: "Assessment",
+        body: "We map your current systems, processes, and gaps.",
       },
       {
         index: "03",
-        title: "Embed",
-        body: "We stay in the room through rollout, building tooling and coaching owners until the new way of working holds on its own.",
+        title: "Implementation",
+        body: "We design and roll out tailored solutions alongside your team.",
       },
       {
         index: "04",
-        title: "Compound",
-        body: "We hand back a company that improves itself — with the operating rhythm and instrumentation to keep getting sharper.",
+        title: "Support & Handover",
+        body: "We equip your team with the tools, training, and documentation to keep going.",
       },
     ] as ProcessStep[],
   },
 
   stats: {
-    eyebrow: "By design",
+    eyebrow: "Proven outcomes",
     items: [
-      { value: 90, suffix: "", label: "Days to first measurable shift" },
-      { value: 3, suffix: "", label: "Functions aligned — revenue, ops, finance" },
-      { value: 100, suffix: "%", label: "Embedded delivery, never slideware" },
+      { value: 3, suffix: " days", label: "Therapist onboarding — down from 6 weeks" },
+      { value: 4, suffix: "", label: "Continents of delivery experience" },
+      { value: 100, suffix: "%", label: "Tailored, outcome-driven engagements" },
     ] as Stat[],
   },
 
   showcase: {
-    eyebrow: "The work",
-    heading: "Operating systems, not slide decks.",
+    eyebrow: "Proven outcomes",
+    heading: "Results you can measure.",
     intro:
-      "Every engagement leaves behind something the company can run — documented workflows, instrumented metrics, and owners who know how it all fits.",
+      "From scaling startups to optimizing SMEs and strengthening NGOs — reduced burn rates, faster onboarding, stronger donor accountability, and aligned teams.",
     images: [
-      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-1.jpg", alt: "Operating model whiteboard session", caption: "Operating model design" },
-      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-2.jpg", alt: "Pipeline and metrics review", caption: "Revenue review cadence" },
-      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-3.jpg", alt: "Process architecture documentation", caption: "Workflow architecture" },
-      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-4.jpg", alt: "Leadership working session", caption: "Embedded delivery" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-1.jpg", alt: "Startup operational readiness session", caption: "Reduced burn rate" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-2.jpg", alt: "SME process optimization review", caption: "Scaling efficiency" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-3.jpg", alt: "NGO donor reporting workflow", caption: "Donor accountability" },
+      { src: "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/eb47ea5a-d543-42f7-b927-44c01833bd54/images/section-gallery-4.jpg", alt: "Leadership alignment working session", caption: "Team alignment" },
     ],
   },
 
   testimonials: {
-    eyebrow: "In their words",
-    heading: "What changes when the system holds.",
+    eyebrow: "Client success stories",
+    heading: "See how we've helped organizations thrive.",
     items: [
       {
         quote:
-          "We were scaling on heroics. SaharaOps replaced the heroics with a system — and the team finally stopped firefighting long enough to grow.",
-        author: "Lena Acheampong",
-        role: "Founder & CEO, Series-B SaaS",
+          "When we engaged Chisobem, Sema had a product and almost non-existent process. Working with SaharaOps got us the systems we needed to effectively run the business. We scaled the time for onboarding therapists from 6 weeks to 2 — and are now bringing that to 3 days.",
+        author: "Founder",
+        role: "SEMA",
       },
       {
         quote:
-          "They did not hand us a deck. They sat in our standups, rebuilt our pipeline, and left when our own people could run it. That is rare.",
-        author: "Marcus Reyes",
-        role: "VP Operations, Logistics Scale-up",
+          "Chisobem was critical to structuring our business operations in such a way that allowed the management team to focus on delivering work and managing client relationships. The systems she helped us build across Sales, IT, Operations, Account Receivables, and HR were key contributors to our ability to sell the business eventually.",
+        author: "Founder",
+        role: "Impakt Advisors",
       },
       {
         quote:
-          "Our board forecasts went from fiction to something we could defend in a quarter. The revenue operations work paid for itself almost immediately.",
-        author: "Priya Nadkarni",
-        role: "CFO, Growth-stage Fintech",
+          "Thank you for helping us build much-needed structure around this business, and for helping me understand the actual workings and production costs associated with it. I now have a work-in-progress document I can consult to clearly see our position.",
+        author: "Founder",
+        role: "Card Sugar",
+      },
+      {
+        quote:
+          "Chisobem is an exceptional growth expert who empowers businesses to leverage proven strategies and frameworks to unlock new market opportunities. With deep expertise in commercialization, investment readiness, and corporate governance, she has been instrumental in supporting our portfolio companies to expand market presence and attract follow-on investment.",
+        author: "Founder",
+        role: "Ennovate Ventures",
       },
     ] as Testimonial[],
   },
 
   cta: {
     eyebrow: "Start here",
-    heading: ["Ready to make the", "system carry the weight?"],
-    body: "Book a 30-minute consultation. We will walk through where your operations are straining and whether SaharaOps is the right fit to fix it.",
+    heading: ["Ready to build your", "operational backbone?"],
+    body: "Book a consultation today and start scaling with confidence.",
     ctaLabel: "Book a Consultation",
     ctaHref: "/contact",
   },
@@ -269,8 +234,8 @@ export const siteConfig = {
   footer: {
     variant: "institutional",
     brandStatement:
-      "SaharaOps is an operations consultancy for growth-stage companies. We design and embed the operating systems that let teams scale without breaking.",
-    ctaHeadline: "Operations engineered to scale.",
+      "SaharaOps is an Operational Readiness consultancy for Startups, SMEs, and NGOs. We design and embed the systems, processes, and strategies that help organizations scale efficiently and grow sustainably.",
+    ctaHeadline: "Operational readiness for organizations that intend to grow.",
   },
 
   nav: [
